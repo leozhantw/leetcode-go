@@ -1,8 +1,9 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 type give struct {
@@ -29,10 +30,17 @@ func Test_twoSum(t *testing.T) {
 			},
 			want: []int{1, 2},
 		},
+		{
+			give: give{
+				nums:   []int{1, 2},
+				target: 4,
+			},
+			want: nil,
+		},
 	}
 
-	for _, t := range tests {
-		got := twoSum(t.give.nums, t.give.target)
-		fmt.Printf("【Your input】 %v 【Output】 %v\n", t.give, got)
+	for _, tt := range tests {
+		got := twoSum(tt.give.nums, tt.give.target)
+		assert.Equal(t, tt.want, got)
 	}
 }
