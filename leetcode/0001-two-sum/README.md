@@ -6,7 +6,6 @@ You may assume that each input would have **exactly one solution**, and you may 
 
 You can return the answer in any order.
 
- 
 
 **Example 1:**
 ```
@@ -29,7 +28,6 @@ Output: [0,1]
 
 
 **Constraints:**
-
 - `2 <= nums.length <= 105`
 - `-109 <= nums[i] <= 109`
 - `-109 <= target <= 109`

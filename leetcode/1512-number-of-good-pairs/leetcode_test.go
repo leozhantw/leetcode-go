@@ -9,7 +9,7 @@ type give struct {
 	nums []int
 }
 
-func Test_shuffle(t *testing.T) {
+func Test_numIdenticalPairs(t *testing.T) {
 	tests := []struct {
 		give give
 		want int

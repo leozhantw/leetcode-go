@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_UpdateSubrectangle(t *testing.T) {
+func Test_SubrectangleQueries(t *testing.T) {
 	subrectangleQueries := Constructor([][]int{
 		{1, 2, 1},
 		{4, 3, 4},

@@ -59,7 +59,6 @@ subrectangleQueries.getValue(2, 2); // return 20
  ```
 
 **Constraints:**
-
 * There will be at most `500` operations considering both methods: `updateSubrectangle` and `getValue`.
 * `1 <= rows, cols <= 100`
 * `rows == rectangle.length`
