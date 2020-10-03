@@ -40,6 +40,17 @@ func Test_maxDepth(t *testing.T) {
 			},
 			want: 3,
 		},
+		{
+			give: give{
+				root: &TreeNode{
+					Val: 21,
+					Left: &TreeNode{
+						Val: 7,
+					},
+				},
+			},
+			want: 2,
+		},
 	}
 
 	for _, tt := range tests {
